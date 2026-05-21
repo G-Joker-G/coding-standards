@@ -1,3 +1,5 @@
+[中文](./README.md) | [English](./README.en.md)
+
 # 编码任务核心规范 — 12 条行为契约
 
 来源：基于 Andrej Karpathy 的观察 → forrestchang/andrej-karpathy-skills（4 规则）→ Mnimiy (@mnilax) 扩展为 12 规则（claude-code-pro-pack）
