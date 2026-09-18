@@ -11,14 +11,16 @@
 
 1. **Security, data integrity, trust-boundary validation — non-negotiable.** No "simplification" may touch these three.
 2. **All other conflicts: don't average them.** Pick one explicitly and say why.
-3. **When something is unclear: stop and ask.** Don't guess.
+3. **When something is unclear: investigate first.** Don't guess.
+   - If code, docs, logs, tests, or a local experiment can answer it → investigate on your own.
+   - If a key ambiguity remains after investigating, and it affects product direction, security boundaries, irreversible actions, or the final result → stop and confirm.
 
 ## A Before you start
 
 ### 1. Read → Think → Write
 
 - **Read**: before changing a function, read its callers; before adding a utility, search for an existing one; before creating a file, look at its siblings.
-- **Think**: state assumptions explicitly; raise multiple interpretations; say when a simpler approach exists; stop and ask when unclear.
+- **Think**: state assumptions explicitly; when several interpretations exist, rule them out with available evidence first; say when a simpler approach exists; escalate only for key ambiguities that technical investigation cannot remove.
 - **Never substitute trial-and-error for design.**
 
 ### 2. Simplicity First: Find the Minimum by the Ladder
@@ -59,8 +61,7 @@ When a deletion causes a fatal issue, "being able to fall back to a stable versi
 
 ### 4. Finish What You Start (Checkpoints)
 
-- Multi-step tasks: group them logically — **stop and confirm between groups**; **iterate autonomously within a group**.
-- On error, roll back only to the last checkpoint, not to the start.
+Multi-step tasks: set checkpoints at logical stages; on error, roll back only to the most recent stable checkpoint, not to the start.
 
 ### 5. Surface Conflicts, Don't Average
 
