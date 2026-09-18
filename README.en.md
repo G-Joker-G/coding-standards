@@ -1,4 +1,4 @@
-# AI Coding Standards — 8 Behavioral Rules
+# Coding Standards
 
 **Source:** Based on Andrej Karpathy's observations → [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) (4 rules) → Mnimiy ([@mnilax](https://x.com/Mnilax/status/2053116311132155938)) extended to 12 rules (claude-code-pro-pack) → 2026-09-16 restructured to 8 rules
 **Purpose:** Guiding principles for AI coding agents — load them persistently, or inject them with coding tasks
